@@ -1,9 +1,10 @@
 import path from 'path';
-import puppeteer from 'puppeteer';
+import * as puppeteer from 'puppeteer';
 
 
 // Thanks pkg-puppeteer [ cleaned up version :) ]
 export function getPuppeteerChromiumPath(): string {
+    return 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
     const isPkg: boolean = __filename.includes('snapshot');
 
     const replaceRegex: RegExp = (process.platform === 'win32') ?
